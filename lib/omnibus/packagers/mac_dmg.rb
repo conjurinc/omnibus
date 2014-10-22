@@ -150,7 +150,7 @@ module Omnibus
       execute <<-EOH.gsub(/ ^{8}/, '')
         echo '
            tell application "Finder"
-             tell disk "'#{project.name}'"
+             tell disk "#{project.name}"
                open
                set current view of container window to icon view
                set toolbar visible of container window to false
