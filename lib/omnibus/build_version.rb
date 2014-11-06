@@ -267,7 +267,7 @@ module Omnibus
     #
     # @todo Compute this once and store the result in an instance variable
     def version_composition
-      version_regexp = /^(\d+)\.(\d+)\.(\d+)/
+      version_regexp = /^v?(\d+)\.(\d+)\.(\d+)/
       version_regexp.match(git_describe)[1..3]
     end
   end
